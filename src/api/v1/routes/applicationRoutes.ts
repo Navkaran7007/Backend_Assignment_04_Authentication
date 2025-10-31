@@ -1,12 +1,16 @@
 import express from "express";
+import { approveloan, createloan, getloan, reviewloan } 
+                                from "../controllers/applicationControllers";
+
+                                
 const router = express.Router();
 
-router.post("/", );
+router.post("/", createloan);
 
-router.get("/", );
+router.get("/", getloan);
 
-router.put("/:id/review", );
+router.put("/:id/review", reviewloan);
 
-router.put("/:id/approve", );
+router.put("/:id/approve", approveloan);
 
 export default router;
