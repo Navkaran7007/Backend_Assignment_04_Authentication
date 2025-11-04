@@ -31,6 +31,10 @@ import userRoutes from "./api/v1/routes/userRoutes";
 
 app.use("/api/v1/users", userRoutes);
 
+import adminRoutes from "./api/v1/routes/adminRoutes";
+
+app.use("/api/v1/admin", adminRoutes);
+
 // Global error handling middleware (MUST be applied last)
 app.use(errorHandler);
 
