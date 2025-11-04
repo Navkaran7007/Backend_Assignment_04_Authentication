@@ -27,6 +27,10 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/loans", applicationRoutes)
 
+import userRoutes from "./api/v1/routes/userRoutes";
+
+app.use("/api/v1/users", userRoutes);
+
 // Global error handling middleware (MUST be applied last)
 app.use(errorHandler);
 
