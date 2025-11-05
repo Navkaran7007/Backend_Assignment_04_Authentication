@@ -17,7 +17,7 @@ router.get("/",
     getloan);
 
 router.put("/:id/review",
-     authenticate,
+    authenticate,
     isAuthorized({ hasRole: ["officer"], allowSameUser: true }), 
     reviewloan);
 
